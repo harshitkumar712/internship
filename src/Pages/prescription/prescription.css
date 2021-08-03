@@ -1,0 +1,25 @@
+.prescription-wrapper{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	max-width:100%;
+}
+.toggle-button{
+	border:2.5px solid #003300;
+	border-radius:5px;
+	margin:2px;
+	padding:5px 10px;
+}
+.prescription-wrapper input[type=text],select{
+	border:2px solid #003300;
+	margin:2px;
+	padding:5px;
+	border-radius:5px;
+	text-align:center;
+	font-size:1rem;
+}
+.input-wrapper{
+	margin:5px 0;
+
+}

@@ -2,17 +2,17 @@ import "./category.css";
 import { Link } from "react-router-dom";
 const Category = (props) => {
 	const CATEGORY_DATA = [
-		{ id: 1, title: "Vitals", icon: "fas fa-users", path: "/home/vitals" },
+		{ id: 1, title: "Vitals", icon: "fas fa-user", path: "/home/vitals" },
 		{
 			id: 2,
 			title: "Vaccination",
-			icon: "fas fa-users",
+			icon: "fas fa-syringe",
 			path: "/home/vaccination",
 		},
 		{
 			id: 3,
 			title: "Deworming",
-			icon: "fas fa-users",
+			icon: "fas fa-thermometer",
 			path: "/home/deworming",
 		},
 		{
@@ -24,13 +24,13 @@ const Category = (props) => {
 		{
 			id: 5,
 			title: "Diagnostics",
-			icon: "fas fa-users",
+			icon: "fas fa-bookmark",
 			path: "/home/diagnostics",
 		},
 		{
 			id: 6,
 			title: "Prescription",
-			icon: "fas fa-users",
+			icon: "fas fa-book",
 			path: "/home/prescription",
 		},
 	];
@@ -45,7 +45,7 @@ const Category = (props) => {
 			>
 				<div style={
 					props.id === item.id
-						? { background: "#67E0A3"}
+						? { background: "#003300",color:"white"}
 						: null
 				}  className="category-item">
 					<i className={item.icon}></i>
