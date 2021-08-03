@@ -6,17 +6,46 @@ import Authentication from '../../Auth/Authentication';
 
 const Login =(props)=>{
 	const [loginData,setLoginData]=useState({username:'',password:''});
+	const [errors,setErrors]=useState([]);
+
+
+const handleValidation=({username,password})=>{
+	let errors =[];
+	let error;
+	
+	if(handleEmptyField(loginData)){
+       error ={message:'Fill all the fields'};
+       setErrors(errors.concat(error));
+       return false;
+	}else if(username!=="123"&&password!=="123"){
+       error ={message:'Wrong credentials'};
+       setErrors(errors.concat(error));
+       return false;
+	}
+    
+    else{
+    	return true;
+    }
+
+}
+
+const handleEmptyField=({username,password})=>{
+	return !username.length ||  !password.length;
+}
 	const handleSubmit=(e)=>{
    e.preventDefault();
    console.log("submitted");
+   if(handleValidation(loginData)){
+		setErrors([]);
    const{username,password}=loginData;
    if(username==="123"&&password==="123"){
    		props.history.push("/home/prescription");
 
    Authentication.handleLogin(loginData);
+}
    }
    else
-   	console.log("wrong credentials");
+   console.log('Wrong credentials');
    
 	}
 	const handleChange=(e)=>{
@@ -37,6 +66,14 @@ console.log(loginData);
 				<input type="submit" value="Login"/>
 			</form>
 			</div>
+			<div className="login-form-error">
+				{errors.length>0?errors.map((error,i)=> 
+	 (
+		<div key={i}>
+			{error.message}
+		</div>
+		)
+):null}</div>
 			<div>
 			<div className="login-link">Login with OTP?<Link to="loginotp">click here</Link></div>
 			<div className="login-link">New Customer<Link to="register">click here</Link></div>

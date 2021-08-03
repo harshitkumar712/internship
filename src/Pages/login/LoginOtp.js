@@ -9,7 +9,7 @@ const LoginOtp = () => {
 			<img className="logo" src={logo} alt="Logo" />
 			<div className="login-form-wrapper">
 			<form>
-				<input type="text" placeholder="Enter mobile number or email" />
+				<input type="number" placeholder="Enter mobile" />
 				<button>Get OTP</button>
 				<input type="text" placeholder="Enter OTP" />
 				<input type="submit" value="Login"/>

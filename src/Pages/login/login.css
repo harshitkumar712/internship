@@ -55,6 +55,9 @@
 	text-decoration:none;
 	color:blue;
 }
+.login-form-error{
+	color:red;
+}
 @media only screen and (max-width: 1000px) {
  .login-wrapper{
  	justify-content:center;

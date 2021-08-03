@@ -13,7 +13,7 @@ const Input=()=>{
               <Toggle name="M"/>
                <Toggle name="AN"/>
                <Toggle name="N"/>
-<select onChange={()=>console.log('onchange')} id="days" value="days">
+<select onChange={()=>console.log('onchange')}  value="days">
  <option value="days" disabled >Days</option>
   <option value="1">1</option>
   <option value="2">2</option>
