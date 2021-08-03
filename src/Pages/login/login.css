@@ -57,6 +57,7 @@
 @media only screen and (max-width: 1000px) {
  .login-wrapper{
  	justify-content:center;
+ 	padding-top:0;
  }
   .login-form-wrapper form{
     width:90vw;
