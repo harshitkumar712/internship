@@ -17,7 +17,7 @@ const handleValidation=({username,password})=>{
        error ={message:'Fill all the fields'};
        setErrors(errors.concat(error));
        return false;
-	}else if(username!=="123"&&password!=="123"){
+	}else if(username!=="123"||password!=="123"){
        error ={message:'Wrong credentials'};
        setErrors(errors.concat(error));
        return false;
