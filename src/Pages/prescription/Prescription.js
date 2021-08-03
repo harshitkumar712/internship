@@ -15,6 +15,11 @@ const Prescription =()=>{
 			<Input/>
 			<Input/>
 			<Input/>
+			<div className="input-extra">
+			<i className="fas fa-camera"></i>
+			<input type="file" />
+			<textarea className="input-textarea" placeholder="Enter other medicine"/>
+			</div>
 			</div>
 		</div>
 		)
