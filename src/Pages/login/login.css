@@ -3,7 +3,66 @@
 	height:auto;
 }
 .login-wrapper{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
+	width:100vw;
+	height:100vh;
+	background:#eee;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	padding-top:2rem;
+	align-items:center;
+}
+.login-form-wrapper form{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:40vw;
+}
+.login-form-wrapper input{
+	border:2px solid #003300;
+	margin:1rem;
+	width:100%;
+	padding:0.5rem;
+	border-radius:15px;
+	text-align:center;
+	font-size:1rem;
+}
+.login-form-wrapper input[type=submit] {
+    padding:5px; 
+    background:#003300;
+    color:white;
+    width:20%;
+    font-size:1rem;
+    border-radius:15px;
+    padding:0.5rem;
+}
+.login-form-wrapper button{
+	padding:5px; 
+    background:#003300;
+    color:white;
+    width:20%;
+    font-size:1rem;
+    border-radius:15px;
+    padding:0.5rem;
+}
+.login-link{
+	font-size:1rem;
+	margin:1rem;
+}
+.login-link a{
+	text-decoration:none;
+	color:blue;
+}
+@media only screen and (max-width: 1000px) {
+ .login-wrapper{
+ 	justify-content:center;
+ }
+  .login-form-wrapper form{
+    width:90vw;
+  } 
+  .logo{
+	width:50%;
+	height:auto;
+}
 }

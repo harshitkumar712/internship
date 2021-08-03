@@ -26,16 +26,22 @@ console.log(loginData);
 	}
 	return(
 		<div className="login-wrapper">
-			
+		
 			<img className="logo" src={logo} alt="Logo" />
+			
+			<div className="login-form-wrapper">
 			<form onSubmit={handleSubmit}>
 				<input type="text" onChange={handleChange} name="username" value={loginData.username} placeholder="Enter mobile number or email"/>
 
 				<input type="password" onChange={handleChange} name="password" value={loginData.password} placeholder="Enter password"/>
 				<input type="submit" value="Login"/>
 			</form>
-			Login with OTP?<Link to="loginotp">click here</Link>
-			New Customer<Link to="register">click here</Link>
+			</div>
+			<div>
+			<div className="login-link">Login with OTP?<Link to="loginotp">click here</Link></div>
+			<div className="login-link">New Customer<Link to="register">click here</Link></div>
+			</div>
+
 		</div>
 		)
 }
