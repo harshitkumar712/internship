@@ -11,7 +11,7 @@ const Login =(props)=>{
    console.log("submitted");
    const{username,password}=loginData;
    if(username==="123"&&password==="123"){
-   		props.history.push("/home");
+   		props.history.push("/home/prescription");
 
    Authentication.handleLogin(loginData);
    }
