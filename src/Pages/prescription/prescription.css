@@ -11,13 +11,25 @@
 	margin:2px;
 	padding:5px 10px;
 }
-.prescription-wrapper input[type=text],select{
+.prescription-wrapper input[type=text]{
 	border:2px solid #003300;
 	margin:2px;
 	padding:5px;
 	border-radius:5px;
 	text-align:center;
 	font-size:1rem;
+	width:30vw;
+}
+.prescription-wrapper select{
+	border:2px solid #003300;
+	margin:2px;
+	padding:5px;
+	border-radius:5px;
+	text-align:center;
+	font-size:1rem;
+}
+.input-container{
+	margin:1rem;
 }
 .input-wrapper{
 	margin:5px 0;

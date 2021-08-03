@@ -7,6 +7,7 @@ const Prescription =()=>{
 		<div className="prescription-wrapper">
 			{/* <Information/> */}
 			<Category id={6}/>
+			<div className="input-container">
 			<Input/>
 			<Input/>
 			<Input/>
@@ -14,6 +15,7 @@ const Prescription =()=>{
 			<Input/>
 			<Input/>
 			<Input/>
+			</div>
 		</div>
 		)
 }
