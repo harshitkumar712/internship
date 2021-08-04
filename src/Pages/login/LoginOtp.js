@@ -21,6 +21,7 @@ console.log(loginData);
     axios({
       method: "post",
       url: "https://ptsv2.com/t/elesc-1628078529/post",
+      headers: {'Access-Control-Allow-Origin': '*'},
       data:loginData
     })
       .then((response) => {
