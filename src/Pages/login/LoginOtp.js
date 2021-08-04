@@ -19,7 +19,7 @@ console.log(loginData);
     console.log(loginData);
 
     axios({
-      method: "get",
+      method: "post",
       url: "/t/elesc-1628078529/post",
       data:loginData
     })
