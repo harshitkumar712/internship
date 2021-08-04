@@ -2,7 +2,7 @@ import "./category.css";
 import { Link } from "react-router-dom";
 const Category = (props) => {
 	const CATEGORY_DATA = [
-		{ id: 1, title: "Vitals", icon: "fas fa-user", path: "/home/vitals" },
+		{ id: 1, title: "User", icon: "fas fa-user", path: "/home/user" },
 		{
 			id: 2,
 			title: "Vaccination",

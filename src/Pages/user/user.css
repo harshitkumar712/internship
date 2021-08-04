@@ -1,0 +1,40 @@
+.user-wrapper{
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	max-width:100%;
+
+}
+table{
+	width: 80%;
+	border:1.5px solid #003300;
+	border-collapse:collapse;
+text-align:center;
+
+}
+th{
+	background:#003300;
+	font-size:.85rem;
+	color:white;
+	margin:.6rem;
+font-weight:400;
+}
+td{
+	font-size:1rem;
+	padding:.2rem;
+	
+}
+th:not(:last-child){
+	border-right: 1.5px solid #003300;
+}
+td:not(:last-child){
+	border-right: 1.5px solid #003300;
+}
+
+@media only screen and (max-width: 1000px) {
+ table{
+ 	width:90%;
+ }
+}
