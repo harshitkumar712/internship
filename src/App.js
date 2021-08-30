@@ -3,6 +3,7 @@ import './App.css';
 import Login from './Pages/login/Login';
 import LoginOtp from './Pages/login/LoginOtp';
 import Prescription from './Pages/prescription/Prescription';
+// import Diagnostics from './Pages/diagnostics/Diagnostics';
 import Register from './Pages/register/Register';
 import User from './Pages/user/User';
 import Home from './Pages/home/Home';
@@ -18,6 +19,7 @@ function App() {
     <Route path="/register" component={Register}/>
     <Route exact path="/home" component={Home}/>
     <Route path="/home/prescription" component={Prescription}/>
+    {/* <Route path="/home/diagnostics" component={Diagnostics}/> */}
     <Route path="/home/user" component={User}/>
     </Router>
     </div>

@@ -1,4 +1,4 @@
-import "./category.css";
+ import "./category.css";
 import { Link } from "react-router-dom";
 const Category = (props) => {
 	const CATEGORY_DATA = [

@@ -1,14 +1,26 @@
-import React,{useState}from 'react';
+import React,{useState,useEffect}from 'react';
 import './login.css';
 import logo from '../../Assets/images/logo.png';
 import {Link} from 'react-router-dom';
 import Authentication from '../../Auth/Authentication';
+import VanillaTilt from 'vanilla-tilt';
 
 const Login =(props)=>{
 	const [loginData,setLoginData]=useState({username:'',password:''});
 	const [errors,setErrors]=useState([]);
 
+const tiltRef=React.useRef(0);
 
+useEffect(()=>{
+	const tiltNode= tiltRef.current;
+	VanillaTilt.init(tiltNode,{
+		max:30,
+		speed:10,
+		glare:true,
+		'max-glare':.5,
+	})
+},[])
+console.log(tiltRef);
 const handleValidation=({username,password})=>{
 	let errors =[];
 	let error;
@@ -56,7 +68,7 @@ console.log(loginData);
 	return(
 		<div className="login-wrapper">
 		
-			<img className="logo" src={logo} alt="Logo" />
+			<img ref={tiltRef} className="logo" src={logo} alt="Logo" />
 			
 			<div className="login-form-wrapper">
 			<form onSubmit={handleSubmit}>

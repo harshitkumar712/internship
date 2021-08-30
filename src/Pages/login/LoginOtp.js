@@ -16,9 +16,20 @@ console.log(loginData);
 
 	const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(loginData);
+   
 
-    axios({
+   
+    // const newData={
+    // 	name:loginData.mobile,
+    // 	job:loginData.otp
+    // }
+    // console.log(newData);
+    // axios({
+    //   method: "delete",
+    //   url: "/api/users/2",
+    //   // data:newData
+    // })
+     axios({
       method: "post",
       url: "/t/elesc-1628078529/post",
       data:loginData
@@ -35,7 +46,7 @@ console.log(loginData);
 			<img className="logo" src={logo} alt="Logo" />
 			<div className="login-form-wrapper">
 			<form onSubmit={handleSubmit}>
-				<input type="number" onChange={handleChange} value={loginData.mobile} name="mobile" placeholder="Enter mobile" />
+				<input type="text" onChange={handleChange} value={loginData.mobile} name="mobile" placeholder="Enter mobile" />
 				<button>Get OTP</button>
 				<input type="text" onChange={handleChange} value={loginData.otp} name="otp" placeholder="Enter OTP" />
 				<input  type="submit" value="Login"/>
